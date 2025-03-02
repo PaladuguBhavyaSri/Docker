@@ -1,0 +1,20 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: text-processor-deployment
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: text-processor
+  template:
+    metadata:
+      labels:
+        app: text-processor
+    spec:
+      containers:
+      - name: text-processor-container
+        image: paladugubhavyasri19/text-processor:latest
+        command: ["sh", "-c", "python3 script.py && tail -f /dev/null"]  
+        ports:
+        - containerPort: 80  # Ensure this matches your app's port
