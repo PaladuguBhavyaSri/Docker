@@ -1,0 +1,16 @@
+
+Total words in IF-1.txt: 301
+Total words in AlwaysRememberUsThisWay-1.txt: 242
+Grand total words across both files: 543
+
+Top 3 most frequent words in IF-1.txt:
+you: 20
+and: 20
+if: 14
+
+Top 3 most frequent words in AlwaysRememberUsThisWay-1.txt (with contractions handled):
+i: 15
+the: 13
+t: 9
+
+IP Address of the container: 172.17.0.2
